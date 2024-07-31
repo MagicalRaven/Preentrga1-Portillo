@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import ProductList from './components/ProductList';
+import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 import Cart from './components/Cart';
 import ProductDetail from './components/ProductDetail';
 import './app.css';
@@ -39,6 +40,7 @@ const App = () => {
   ]);
   const [cart, setCart] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [category, setCategory] = useState('all'); 
 
   const addToCart = product => {
     setCart([...cart, product]);
@@ -48,10 +50,14 @@ const App = () => {
     setSelectedProduct(product);
   };
 
+  const handleCategoryChange = category => {
+    setCategory(category);
+  };
+
   return (
     <div className="App">
-      <h1>Supermercado</h1>
-      <ProductList products={products} addToCart={addToCart} />
+      <NavBar saludo="¡Bienvenido a nuestro supermercado!" onCategoryChange={handleCategoryChange} />
+      <ItemListContainer products={products} category={category} />
       <Cart cart={cart} />
       <ProductDetail product={selectedProduct} />
     </div>
