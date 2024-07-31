@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const ItemListContainer = ({ category }) => {
+const ItemListContainer = ({ category, greeting }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -12,6 +12,7 @@ const ItemListContainer = ({ category }) => {
 
   return (
     <div className="item-list-container">
+      <h1>{greeting}</h1>
       {products.map(product => (
         <div key={product.id} className="product-item">
           <h2>{product.name}</h2>
