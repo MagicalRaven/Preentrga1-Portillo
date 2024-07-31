@@ -1,7 +1,6 @@
 import React from 'react';
 import CartWidget from './CartWidget';
-import './NavBar.css'; // Asegúrate de crear este archivo para estilos específicos
-
+//import './NavBar.css'; 
 const NavBar = ({ Bienvenido }) => {
   return (
     <nav className="navbar">
