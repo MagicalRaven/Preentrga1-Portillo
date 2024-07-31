@@ -57,7 +57,7 @@ const App = () => {
   return (
     <div className="App">
       <NavBar saludo="¡Bienvenido a nuestro supermercado!" onCategoryChange={handleCategoryChange} />
-      <ItemListContainer products={products} category={category} />
+      <ItemListContainer greeting={"Bienvenid@ a nuestro super!"} products={products} category={category} />
       <Cart cart={cart} />
       <ProductDetail product={selectedProduct} />
     </div>
