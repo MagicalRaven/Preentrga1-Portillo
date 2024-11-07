@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "title": "Laptop",
+      "description": "Laptop de alta gama con 16GB RAM",
+      "code": "LAP123",
+      "price": 1200,
+      "status": true,
+      "stock": 10,
+      "category": "Electronics",
+      "thumbnails": ["img/laptop1.png", "img/laptop2.png"]
+    },
+    {
+      "id": 2,
+      "title": "Mouse",
+      "description": "Mouse inalámbrico",
+      "code": "MOU456",
+      "price": 25,
+      "status": true,
+      "stock": 100,
+      "category": "Accessories",
+      "thumbnails": ["img/mouse1.png"]
+    },
+    {
+      "id": 3,
+      "title": "Teclado Mecánico",
+      "description": "Teclado mecánico con retroiluminación RGB",
+      "code": "KEY789",
+      "price": 80,
+      "status": true,
+      "stock": 50,
+      "category": "Accessories",
+      "thumbnails": ["img/keyboard1.png", "img/keyboard2.png"]
+    }
+  ]
+  
